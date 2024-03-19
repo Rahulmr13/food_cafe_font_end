@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>menucardt</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        font-family: monospace;
+        text-transform: capitalize;
+        color: white;
+        background-color: black;
+      }
+
+      nav {
+        background-color: rgb(27, 49, 49);
+      }
+      .container h1 {
+        text-align: center;
+        color: brown;
+        font-family: jokerman;
+        font-size: 45px;
+        font-weight: bolder;
+        padding: 25px;
+        text-decoration: underline;
+      }
+      .tablecontent{
+        padding: 30px;
+        color: red;
+        border: 4px solid red;
+        text-align: center;
+      }
+      
+       
+      
+      .tabledata{
+        padding: 10px;
+        color:orange;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        border: 1px solid yellow;
+      }
+      .tabledatanon{
+        padding: 10px;
+        color:red;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        border: 1px solid purple;
+        background-color: wheat;
+      }
+      h3{
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+        color:darkturquoise;
+        padding: 25px;
+      }
+      .footer {
+        text-align: center;
+      }
+      .footermenu {
+        background-color: bisque;
+        padding: 10px;
+        text-align: center;
+      }
+      .footermenu .col-md-1 {
+        font-size: 12px;
+        padding: 40px;
+        color: black;
+      }
+      .footermenu .col-md-1:hover {
+        color: green;
+        font-size: 14px;
+        text-decoration: underline;
+      }
+      .footerlogo{
+        animation: logo 3s linear infinite;
+      }
+      @keyframes logo{
+        0%{
+            transform: translateX(-190px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      li:hover {
+        background-color: black;
+        color: yellow;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="logo.jpg"
+              alt="logo"
+              width="60"
+              height="60"
+              class="rounded-circle"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactme.html  ">contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menucard.html">Menu Card</a>
+              </li>
+            </ul>
+
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <h1>Restaurant Menu Card</h1>
+    </div>
+    <div class="container-fluid ">
+    <div class="row">
+        <div class="col-md-6">
+      <h3>NonVeg-Items List</h3>
+      <table class="tablecontent">
+        <!-- 1 -->
+        <tr>
+          <th class="tabledata">01.</th>
+          <th class="tabledata">Mutton Fry</th>
+          <th class="tabledata">
+            <img
+              src="beef-vegetables-sesame-seeds-isolated-white-background.jpg"
+              alt=""
+              width="100%"
+              height="150px"
+            />
+            <td class="tabledata">100 RS/-</td>
+          </th>
+        </tr>
+        <!-- 2 -->
+        <tr>
+            <th class="tabledata">02.</th>
+            <th class="tabledata">Chicken Roast</th>
+            <th class="tabledata">
+              <img
+                src="chicken_slice.jpg"
+                alt=""
+                width="100%"
+                height="150px"
+              />
+              <td class="tabledata">100 RS/-</td>
+            </th>
+          </tr>
+          <!-- 3 -->
+        <tr>
+            <th class="tabledata">03.</th>
+            <th class="tabledata">Chicken Thandoori</th>
+            <th class="tabledata">
+              <img
+                src="chicken_thandoori.jpg"
+                alt=""
+                width="100%"
+                height="150px"
+              />
+              <td class="tabledata">100 RS/-</td>
+            </th>
+          </tr>
+          <!-- 4 -->
+        <tr>
+            <th class="tabledata">04.</th>
+            <th class="tabledata">Chicken Lalipop</th>
+            <th class="tabledata">
+              <img
+                src="delicious-fried-chicken-plate.jpg"
+                alt=""
+                width="100%"
+                height="150px"
+              />
+              <td class="tabledata">100 RS/-</td>
+            </th>
+          </tr>
+          <!-- 5-->
+        <tr>
+            <th class="tabledata">05.</th>
+            <th class="tabledata">Full Meal meet curry</th>
+            <th class="tabledata">
+              <img
+                src="gourmet-beef-curry-taco-with-fresh-guacamole-generated-by-ai.jpg"
+                alt=""
+                width="100%"
+                height="150px"
+              />
+              <td class="tabledata">100 RS/-</td>
+            </th>
+          </tr>
+          <!-- 6 -->
+        <tr>
+            <th class="tabledata">06.</th>
+            <th class="tabledata">KFC Chicken</th>
+            <th class="tabledata">
+              <img
+                src="kabab.jpg"
+                alt=""
+                width="100%"
+                height="150px"
+              />
+              <td class="tabledata">100 RS/-</td>
+            </th>
+          </tr>
+          <!-- 7 -->
+        <tr>
+            <th class="tabledata">07.</th>
+            <th class="tabledata">Bhasumathi Chicken Biriyani</th>
+            <th class="tabledata">
+              <img
+                src="plate-biryani-with-bunch-spices-it (1).jpg"
+                alt=""
+                width="100%"
+                height="150px"
+              />
+              <td class="tabledata">100 RS/-</td>
+            </th>
+          </tr>
+          <!-- 8 -->
+        <tr>
+            <th class="tabledata">08.</th>
+            <th class="tabledata">Mutton Thava Roast</th>
+            <th class="tabledata">
+              <img
+                src="muttonroast.jpg"
+                alt=""
+                width="100%"
+                height="150px"
+              />
+              <td class="tabledata">100 RS/-</td>
+            </th>
+          </tr>
+          <!-- 9 -->
+        <tr>
+            <th class="tabledata">09.</th>
+            <th class="tabledata">Chicken Lalipop</th>
+            <th class="tabledata">
+              <img
+                src="slide3.jpg"
+                alt=""
+                width="100%"
+                height="150px"
+              />
+              <td class="tabledata">100 RS/-</td>
+            </th>
+          </tr>
+           <!-- 10 -->
+        <tr>
+            <th class="tabledata">10.</th>
+            <th class="tabledata">Fish Thava Fry</th>
+            <th class="tabledata">
+              <img
+                src="wallpaperflare.com_wallpaper (11).jpg"
+                alt=""
+                width="80%"
+                height="150px"
+              />
+              <td class="tabledata">100 RS/-</td>
+            </th>
+          </tr>
+           <!-- 11 -->
+        <tr>
+            <th class="tabledata">11.</th>
+            <th class="tabledata">Chicken Thandoori</th>
+            <th class="tabledata">
+              <img
+                src="wallpaperflare.com_wallpaper (12).jpg"
+                alt=""
+                width="100%"
+                height="150px"
+              />
+              <td class="tabledata">100 RS/-</td>
+            </th>
+          </tr>
+           <!-- 12-->
+        <tr>
+            <th class="tabledata">12.</th>
+            <th class="tabledata">Chicken Thikka and cheese</th>
+            <th class="tabledata">
+              <img
+                src="wallpaperflare.com_wallpaper (14).jpg"
+                alt=""
+                width="100%"
+                height="150px"
+              />
+              <td class="tabledata">100 RS/-</td>
+            </th>
+          </tr>
+           <!-- 13 -->
+        <tr>
+            <th class="tabledata">13.</th>
+            <th class="tabledata">Chicken Biriyani</th>
+            <th class="tabledata">
+              <img
+                src="wallpaperflare.com_wallpaper (16).jpg"
+                alt=""
+                width="100%"
+                height="150px"
+              />
+              <td class="tabledata">100 RS/-</td>
+            </th>
+          </tr>
+           <!-- 14-->
+        <tr>
+            <th class="tabledata">14.</th>
+            <th class="tabledata">Pepper Chicken</th>
+            <th class="tabledata">
+              <img
+                src="wallpaperflare.com_wallpaper (18).jpg"
+                alt=""
+                width="100%"
+                height="150px"
+              />
+              <td class="tabledata">100 RS/-</td>
+            </th>
+          </tr>
+           <!-- 15 -->
+        <tr>
+            <th class="tabledata">15.</th>
+            <th class="tabledata">Mutton Curry</th>
+            <th class="tabledata">
+              <img
+                src="wallpaperflare.com_wallpaper (19).jpg"
+                alt=""
+                width="100%"
+                height="150px"
+              />
+              <td class="tabledata">100 RS/-</td>
+            </th>
+          </tr>
+           <!-- 16 -->
+        <tr>
+            <th class="tabledata">16.</th>
+            <th class="tabledata">Donne Biriyani</th>
+            <th class="tabledata">
+              <img
+                src="wallpaperflare.com_wallpaper (20).jpg"
+                alt=""
+                width="100%"
+                height="150px"
+              />
+              <td class="tabledata">100 RS/-</td>
+            </th>
+          </tr>
+           <!-- 17 -->
+        <tr>
+            <th class="tabledata">17.</th>
+            <th class="tabledata">Fish Curry</th>
+            <th class="tabledata">
+              <img
+                src="wallpaperflare.com_wallpaper (9).jpg"
+                alt=""
+                width="100%"
+                height="150px"
+              />
+              <td class="tabledata">100 RS/-</td>
+            </th>
+          </tr>
+      </table>
+    </div>
+
+    <!-- veg list -->
+    <div class="col-md-6">
+        <h3>Veg-Items List</h3>
+        <table class="tablecontent">
+          <!-- 1 -->
+          <tr>
+            <th class="tabledatanon">01.</th>
+            <th class="tabledatanon">Onion Burger</th>
+            <th class="tabledatanon">
+              <img
+                src="double-hamburger-isolated-white-background-fresh-burger-fast-food-with-beef-cream-cheese (1).jpg"
+                alt=""
+                width="100%"
+                height="150px"
+              />
+              <td class="tabledatanon">100 RS/-</td>
+            </th>
+          </tr>
+          <!-- 2 -->
+          <tr>
+              <th class="tabledatanon">02.</th>
+              <th class="tabledatanon">patato Finger Chips</th>
+              <th class="tabledatanon">
+                <img
+                  src="french-fries-levitate-white-background.jpg"
+                  alt=""
+                  width="100%"
+                  height="150px"
+                />
+                <td class="tabledatanon">100 RS/-</td>
+              </th>
+            </tr>
+            <!-- 3 -->
+          <tr>
+              <th class="tabledatanon">03.</th>
+              <th class="tabledatanon">Italian Pizza</th>
+              <th class="tabledatanon">
+                <img
+                  src="freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai.jpg"
+                  alt=""
+                  width="100%"
+                  height="150px"
+                />
+                <td class="tabledatanon">100 RS/-</td>
+              </th>
+            </tr>
+            <!-- 4 -->
+          <tr>
+              <th class="tabledatanon">04.</th>
+              <th class="tabledatanon">Pepperoni Pizza</th>
+              <th class="tabledatanon">
+                <img
+                  src="pepperoni-pizza-with-olives-wooden-board.jpg"
+                  alt=""
+                  width="100%"
+                  height="150px"
+                />
+                <td class="tabledatanon">100 RS/-</td>
+              </th>
+            </tr>
+            <!-- 5-->
+          <tr>
+              <th class="tabledatanon">05.</th>
+              <th class="tabledatanon">Burger</th>
+              <th class="tabledatanon">
+                <img
+                  src="slide1.jpg"
+                  alt=""
+                  width="100%"
+                  height="150px"
+                />
+                <td class="tabledatanon">100 RS/-</td>
+              </th>
+            </tr>
+            <!-- 6 -->
+          <tr>
+              <th class="tabledatanon">06.</th>
+              <th class="tabledatanon">Onion Burger</th>
+              <th class="tabledatanon">
+                <img
+                  src="slide2.jpg"
+                  alt=""
+                  width="100%"
+                  height="150px"
+                />
+                <td class="tabledatanon">100 RS/-</td>
+              </th>
+            </tr>
+            <!-- 7 -->
+          <tr>
+              <th class="tabledatanon">07.</th>
+              <th class="tabledatanon">Cheese Burger</th>
+              <th class="tabledatanon">
+                <img
+                  src="tasty-burger-isolated-white-background-fresh-hamburger-fastfood-with-beef-cheese.jpg"
+                  alt=""
+                  width="100%"
+                  height="150px"
+                />
+                <td class="tabledatanon">100 RS/-</td>
+              </th>
+            </tr>
+            <!-- 8 -->
+          <tr>
+              <th class="tabledatanon">08.</th>
+              <th class="tabledatanon">cheese Pizza</th>
+              <th class="tabledatanon">
+                <img
+                  src="wallpaperflare.com_wallpaper (17).jpg"
+                  alt=""
+                  width="100%"
+                  height="150px"
+                />
+                <td class="tabledatanon">100 RS/-</td>
+              </th>
+            </tr>
+            <!-- 9 -->
+          <tr>
+              <th class="tabledatanon">09.</th>
+              <th class="tabledatanon">Pannir Butter Fry</th>
+              <th class="tabledatanon">
+                <img
+                  src="wallpaperflare.com_wallpaper (18).jpg"
+                  alt=""
+                  width="100%"
+                  height="150px"
+                />
+                <td class="tabledatanon">100 RS/-</td>
+              </th>
+            </tr>
+             <!-- 9 -->
+        <tr>
+            <th class="tabledatanon">10.</th>
+            <th class="tabledatanon">Yeppie Noodales</th>
+            <th class="tabledatanon">
+              <img
+                src="wallpaperflare.com_wallpaper (21).jpg"
+                alt=""
+                width="100%"
+                lass="tabledatanon"
+                height="150px"
+              />
+              <td class="tabledatanon">100 RS/-</td>
+            </th>
+          </tr>
+           
+        </table>
+      </div>
+  
+    </div>
+    </div>
+    <div class="container-fluid p-0 footermenu">
+        <div class="container footer">
+          <img src="footer.png" alt="" width="150px" height="150px" />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 footerlogo">
+              <img
+                src="serving (1).png"
+                alt=""
+                width="70px "
+                height="70px"
+              />
+            </div>
+            <div class="col-md-1"><a href="index.html">Home</a></div>
+            <div class="col-md-1"><a href="#aboutus">About</a></div>
+            <div class="col-md-1"><a href="#">Contact</a></div>
+            <div class="col-md-1"><a href="service.html">services</a></div>
+            <div class="col-md-1"><a href="menucard.html">Menu Card</a></div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        font-family: monospace;
+        text-transform: capitalize;
+      }
+
+      nav {
+        background-color: rgb(27, 49, 49);
+      }
+      li:hover {
+        background-color: black;
+        color: yellow;
+      }
+
+      .header {
+        position: relative;
+
+        color: white;
+        font-weight: 900;
+        font-size: 30px;
+        background-color: black;
+      }
+      .header img {
+        animation: zoom-out 9s linear infinite;
+        width: 110%;
+        height: 570px;
+      }
+      @keyframes zoom-out {
+        100% {
+          width: 100%;
+        }
+      }
+
+      .header h1 {
+        color: yellow;
+        text-shadow: 1px 2px 4px floralwhite;
+
+        font-weight: bolder;
+        padding-bottom: 30px;
+        font-size: 40px;
+        font-family: jokerman;
+      }
+      .header p {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 20px;
+        font-style: italic;
+      }
+      .top-left {
+        position: absolute;
+        text-align: center;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .section2 {
+        background-color: black;
+        margin-top: -30px;
+        text-align: center;
+      }
+      .grid1 {
+        margin-top: 4rem;
+        color: white;
+        line-height: 2rem;
+        text-align: center;
+      }
+      .grid1 .aboutcontent {
+        padding: 30px;
+      }
+      .grid1 h1 {
+        color: yellow;
+        padding-bottom: 4px;
+        text-shadow: 1px 2px 4px white;
+        font-weight: bolder;
+        font-size: 40px;
+        font-family: jokerman;
+      }
+
+      .line {
+        background-color: rgb(219, 29, 29);
+        height: 2px;
+        width: 100px;
+        margin-left: 13rem;
+      }
+      .line1 {
+        background-color: rgb(219, 29, 29);
+        height: 2px;
+        width: 100px;
+        margin-left: 1rem;
+      }
+      .grid1 p {
+        padding-top: 40px;
+      }
+
+      .grid2 {
+        margin-top: 3rem;
+        padding: 40px;
+        color: white;
+      }
+
+      .grid2 p {
+        padding-top: 30px;
+      }
+      .grid2 h1 {
+        color: yellow;
+        font-weight: bolder;
+        text-shadow: 1px 2px 4px lightskyblue;
+        font-size: 40px;
+        font-family: jokerman;
+      }
+
+      .gride2back {
+        background-color: darkslategrey;
+      }
+      .grid3 {
+        margin-top: 1rem;
+        padding: 20px;
+      }
+
+      .grid3 img {
+        border-radius: 30px 0px 30px 0px;
+      }
+      .grid4 {
+        color: yellow;
+        margin-top: 5px;
+        text-align: center;
+        font-weight: 800;
+        font-weight: bold;
+      }
+      .grid4 .col-md-4 {
+        padding: 20px;
+      }
+      .grid4 h1 {
+        padding-bottom: 20px;
+        padding-top: 30px;
+        text-shadow: 2px 3px 4px whitesmoke;
+        font-weight: bolder;
+        font-size: 40px;
+        font-family: jokerman;
+      }
+
+      .gallary2grid {
+        padding: 10px;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .grid4 img {
+        padding: 5px;
+        border-radius: 20px;
+        box-shadow: 1px 7px 20px white;
+      }
+      .grid4 img:hover {
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 1px 7px 20px orange;
+      }
+      .line2 {
+        background-color: rgb(219, 29, 29);
+        height: 2px;
+        width: 100px;
+        /* margin-left: 32rem; */
+        margin-bottom: 40px;
+      }
+      .ourfoodgrid {
+        margin-top: 5rem;
+      }
+      /* .enjoycontent {
+        padding: 30px;
+      } */
+      .homemade {
+        background-image: url(enjoyourlife.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 1rem;
+      }
+      .homemadegrid {
+        text-align: center;
+        margin-top: 0rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+      }
+      .homemadegrid h1 {
+        text-align: center;
+        color: yellow;
+        font-weight: 800;
+        font-size: 45px;
+        text-shadow: 4px 6px 6px pink;
+        font-size: 40px;
+        font-family: jokerman;
+      }
+      .homemadegrid {
+        margin-top: 10px;
+        font-size: 23px;
+        color: orange;
+      }
+      .contentborder {
+        border: 10px solid white;
+        font-weight: 700;
+        padding: 60px;
+      }
+
+      .menugrid {
+        text-align: center;
+        color: white;
+      }
+      .menugrid a {
+        text-decoration: none;
+        border: 1px solid white;
+        color: white;
+        background-color: orange;
+        padding: 15px;
+        margin-top: 3rem;
+        border-radius: 8px;
+      }
+      .menugrid a:hover {
+        background-color: white;
+        font-size: 20px;
+        border: 3px solid green;
+        color: red;
+      }
+      .menugrid h1 {
+        font-size: 40px;
+        font-family: jokerman;
+        padding: 30px;
+        color: yellow;
+        text-shadow: 2px 4px 6px white;
+        font-weight: 700;
+      }
+
+      .menugrid .col-md-4:hover {
+        background-color: darkslategray;
+        border: 1px solid black;
+      }
+
+      .menugrid img {
+        padding: 10px;
+      }
+      .pricemenu p {
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 400;
+        font-size: 15px;
+      }
+      .pricemenu h3 {
+        color: red;
+        font-size: 30px;
+      }
+      .morefoodbtn {
+        margin-top: 20px;
+      }
+      .enjoycontent {
+        background-image: url(enjoyourlife.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 90vh;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .enjoycontent .homemadecontent {
+        text-align: center;
+      }
+      .homemadecontent {
+        padding-top: 2rem;
+      }
+      .homecontent {
+        border: 10px solid green;
+        padding: 10px;
+      }
+      .homecontent h2 {
+        font-weight: bolder;
+        font-size: 40px;
+        padding-bottom: 20px;
+        color: orange;
+        text-shadow: 2px 4px 7px blueviolet;
+        font-family: jokerman;
+      }
+      .homecontent p {
+        font-weight: bolder;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 18px;
+      }
+      .hiddingcontent {
+        color: transparent;
+      }
+      .footer {
+        text-align: center;
+      }
+      .footermenu {
+        background-color: bisque;
+        padding: 10px;
+        text-align: center;
+      }
+      .footermenu .col-md-1 {
+        font-size: 12px;
+        padding: 40px;
+      }
+      .footermenu .col-md-1:hover {
+        color: green;
+        font-size: 14px;
+        text-decoration: underline;
+      }
+      .footerlogo {
+        animation: logo 3s linear infinite;
+      }
+      @keyframes logo {
+        0% {
+          transform: translateX(-190px);
+        }
+        100% {
+          transform: translateX(0px);
+        }
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      /* text sliders code */
+      .headingreveal {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 2s ease;
+      }
+      .headingreveal.active {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+      .headercontent {
+        padding-bottom: 200px;
+      }
+    </style>
+  </head>
+  <body class="bg-dark">
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="logo.jpg"
+              alt="logo"
+              width="60"
+              height="60"
+              class="rounded-circle"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutus">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactme.html  ">contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menucard.html">Menu Card</a>
+              </li>
+            </ul>
+
+            
+              <a href="signup.html"
+                ><span style="border: 1px solid black; margin-right: 20px; padding: 10px;color: black;background-color: white;">Sign Up</span></a
+              >
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid p-0 header">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="top-left">
+            <div class="container-fluid headercontent headingreveal">
+              <h1>Welcome come to food cafe</h1>
+              <p>its awsome food cafe</p>
+            </div>
+          </div>
+          <img
+            src="wallpaperflare.com_wallpaper (12).jpg"
+            alt=""
+            height="100%"
+            width="100%"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0 section2" id="aboutus">
+      <div class="row">
+        <div class="col-md-6 bg-light aboutusimage">
+          <img
+            src="tasty-burger-isolated-white-background-fresh-hamburger-fastfood-with-beef-cheese.jpg"
+            alt="imgage"
+            width="80%"
+            height="80%"
+          />
+        </div>
+        <div class="col-md-6 grid1">
+          <div class="container">
+            <div class="abouttrans headingreveal">
+              <h1>about us</h1>
+            </div>
+            <div class="headingreveal">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt corporis expedita ipsum! Suscipit similique quisquam
+                nisi praesentium expedita hic ut rerum autem, libero eveniet
+                quae blanditiis explicabo sapiente quod iste.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0 gride2back">
+      <div class="row">
+        <div class="col-md-6 grid2">
+          <h1 class="headingreveal">Our Food Quality</h1>
+          <div class="line1 headingreveal"></div>
+          <p class="headingreveal">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            corporis expedita ipsum! Suscipit similique quisquam nisi
+            praesentium expedita hic ut rerum autem, libero eveniet quae
+            blanditiis explicabo sapiente quod iste.
+          </p>
+        </div>
+        <div class="col-md-6 grid3">
+          <img
+            src="slide4.jpg"
+            alt="imgage"
+            width="100%"
+            height="100%"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- gallary -->
+    <div class="container-fluid grid4">
+      <h1 class="headingreveal">Gallary</h1>
+      <div class="row headingreveal">
+        <div class="col-md-4">
+          <div class="container-fluid">
+            <img src="slide2.jpg" alt="" width="100%" height="250px" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container-fluid">
+            <img
+              src="delicious-fried-chicken-plate.jpg"
+              alt=""
+              width="100%"
+              height="250px"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container-fluid">
+            <img src="slide3.jpg" alt="" width="100%" height="250px" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row gallary2grid headingreveal">
+        <div class="col-md-4">
+          <div class="container-fluid">
+            <img
+              src="wallpaperflare.com_wallpaper (9).jpg"
+              alt=""
+              width="100%"
+              height="250px"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container-fluid">
+            <img
+              src="wallpaperflare.com_wallpaper (21).jpg"
+              alt=""
+              width="100%"
+              height="250px"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container-fluid">
+            <img
+              src="wallpaperflare.com_wallpaper (20).jpg"
+              alt=""
+              width="100%"
+              height="250px"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row gallary2grid headingreveal">
+        <div class="col-md-4">
+          <div class="container-fluid">
+            <img
+              src="wallpaperflare.com_wallpaper (19).jpg"
+              alt=""
+              width="100%"
+              height="250px"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container-fluid">
+            <img
+              src="wallpaperflare.com_wallpaper (18).jpg"
+              alt=""
+              width="100%"
+              height="250px"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container-fluid">
+            <img
+              src="wallpaperflare.com_wallpaper (17).jpg"
+              alt=""
+              width="100%"
+              height="250px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- enjoy our food -->
+    <div class="container-fluid ourfoodgrid p-0">
+      <div class="row homemade">
+        <div class="col-md-12">
+          <div class="container homemadegrid">
+            <div class="contentborder">
+              <h1 class="headingreveal">Home Made Masala</h1>
+              <p class="headingreveal">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+                nulla velit delectus, molestias perspiciatis at neque vero,
+                similique amet eaque minima illum, eum modi! Dolor quas quam
+                quae explicabo neque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0 menugrid">
+      <h1 class="headingreveal">Our Menu</h1>
+      <div class="row headingreveal">
+        <div class="col-md-4">
+          <img
+            src="/delicious-fried-chicken-plate.jpg"
+            alt=""
+            width="90%"
+            height="300px"
+          />
+          <div class="container-fluid pricemenu">
+            <h3>Chicken Kabab</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p>250 Rs/-</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img
+            src="chicken_slice.jpg"
+            alt=""
+            width="90%"
+            height="300px"
+          />
+          <div class="container-fluid pricemenu">
+            <h3>Chicken Kabab</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p>250 Rs/-</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <img
+            src="chicken_thandoori.jpg"
+            alt=""
+            width="90%"
+            height="300px"
+          />
+          <div class="container-fluid pricemenu">
+            <h3>Chicken Kabab</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p>250 Rs/-</p>
+          </div>
+        </div>
+      </div>
+      <div class="container morefoodbtn p-20">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="container headingreveal">
+              <a href="service.html">More Foods Menu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0">
+      <div class="row enjoycontent">
+        <div class="col-md-6">
+          <div class="container homemadecontent">
+            <div class="hiddingcontent">
+              <h2>Enjoy Our Food</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+                nulla velit delectus, molestias perspiciatis at neque vero,
+                similique amet eaque minima illum, eum modi! Dolor quas quam
+                quae explicabo neque.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="container homemadecontent">
+            <div class="homecontent">
+              <h2 class="headingreveal">Enjoy Our Food</h2>
+              <p class="headingreveal">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+                nulla velit delectus, molestias perspiciatis at neque vero,
+                similique amet eaque minima illum, eum modi! Dolor quas quam
+                quae explicabo neque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0 footermenu">
+      <div class="container footer">
+        <img src="footer.png" alt="" width="150px" height="150px" />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footerlogo">
+            <img
+              src="serving (1).png"
+              alt=""
+              width="70px "
+              height="70px"
+            />
+          </div>
+
+          <div class="col-md-1"><a href="index.html">Home</a></div>
+          <div class="col-md-1"><a href="#">About</a></div>
+          <div class="col-md-1"><a href="#">Contact</a></div>
+          <div class="col-md-1"><a href="service.html">services</a></div>
+          <div class="col-md-1"><a href="menucard.html">Menu Card</a></div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      // heading
+      window.addEventListener("scroll", headingreveal);
+
+      function headingreveal() {
+        var reveals = document.querySelectorAll(".headingreveal");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

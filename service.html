@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        font-family: monospace;
+        text-transform: capitalize;
+        color: white;
+        background-color: black;
+      }
+
+      nav {
+        background-color: rgb(27, 49, 49);
+      }
+      .heading {
+        color: blue;
+        text-align: center;
+        font-family: jokerman;
+        text-shadow: 2px 3px 7px white;
+        font-size: 40px;
+        padding: 20px;
+        margin-top: 10px;
+        
+      }
+      .vegitem {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bolder;
+        color: green;
+        padding: 20px;
+      }
+      .vegitem h1{
+        padding: 6px;
+        padding-bottom: 20px;
+        font-family: monospace;
+        font-weight: bolder;
+        text-shadow: 3px 1px 6px white;
+        font-size: 40px;
+      }
+      .nonvegitem h1{
+        padding: 6px;
+        padding-bottom: 20px;
+        font-family: monospace;
+        font-weight: bolder;
+        text-shadow: 3px 1px 6px white;
+        font-size: 40px;
+      }
+      .nonvegitem {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bolder;
+        color: green;
+        padding: 20px;
+      }
+      .vegitem button{
+        padding: 6px;
+        margin: 2px;
+        margin-bottom: 30px;
+        color: black;
+        background-color: orange;
+        border: 2px solid white;
+        border-radius: 3px;
+      }
+      .vegitem button:hover{
+        background-color: transparent;
+        color: white;
+        border: 2px solid red;
+      }
+      .nonvegitem button{
+        padding: 6px;
+        margin: 2px;
+        margin-bottom: 30px;
+        color: black;
+        background-color: orange;
+        border: 2px solid white;
+        border-radius: 3px;
+      }
+      .nonvegitem button:hover{
+        background-color: transparent;
+        color: white;
+        border: 2px solid red;
+      }
+      .pricemenu{
+        color: white;
+      }
+      .pricemenu h3{
+        color: brown;
+        font-weight: bolder;
+        font-size: 20px;
+        padding-top: 15px;
+      }
+      /* slider */
+      .headingreveal {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 2s ease;
+      }
+      .headingreveal.active {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+      .footer {
+        text-align: center;
+      }
+      .footermenu {
+        background-color: bisque;
+        padding: 10px;
+        text-align: center;
+      }
+      .footermenu .col-md-1 {
+        font-size: 12px;
+        padding: 40px;
+        color: black;
+      }
+      .footermenu .col-md-1:hover {
+        color: green;
+        font-size: 14px;
+        text-decoration: underline;
+      }
+      li:hover {
+        background-color: black;
+        color: yellow;
+      }
+      .footerlogo{
+        animation: logo 3s linear infinite;
+      }
+      @keyframes logo{
+        0%{
+            transform: translateX(-190px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="logo.jpg"
+              alt="logo"
+              width="60"
+              height="60"
+              class="rounded-circle"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactme.html  ">contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menucard.html">Menu Card</a>
+              </li>
+            </ul>
+
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid p-0">
+      <h1 class="heading ">Services</h1>
+      <hr style="height: 3px;color: red;box-shadow: 10px 10px 10px white;">
+      <div class="container-fluid vegitem ">
+        <h1 class="headingreveal">Veg Food Items</h1>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-3">
+                <img
+                  src="wallpaperflare.com_wallpaper (21).jpg"
+                  alt=""
+                  width="90%"
+                  height="300px"
+                  class="headingreveal"
+                />
+                <div class="container-fluid pricemenu headingreveal">
+                  <h3>Yeppi noodles</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p>90 Rs/-</p>
+                  <button>add cart</button>
+                  <button>Purchase</button>
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <img
+                  src="pepperoni-pizza-with-olives-wooden-board.jpg"
+                  alt=""
+                  width="95%"
+                  height="300px"
+                  class="headingreveal"
+                />
+                <div class="container-fluid pricemenu headingreveal">
+                  <h3>Pepperoni-pizza</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p>150 Rs/-</p>
+                  <button>add cart</button>
+                  <button>Purchase</button>
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <img
+                  src="tasty-burger-isolated-white-background-fresh-hamburger-fastfood-with-beef-cheese.jpg"
+                  alt=""
+                  width="100%"
+                  height="300px"
+                  class="headingreveal"
+                />
+                <div class="container-fluid pricemenu headingreveal">
+                  <h3>Burger</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p>100 Rs/-</p>
+                  <button>add cart</button>
+                  <button>Purchase</button>
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <img
+                  src="slide1.jpg"
+                  alt=""
+                  width="100%"
+                  height="300px"
+                  class="headingreveal"
+                />
+                <div class="container-fluid pricemenu headingreveal">
+                  <h3>Chicken Kabab</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p>170 Rs/-</p>
+                  <button>add cart</button>
+                  <button>Purchase</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="height: 3px;color: red;box-shadow: 20px 12px 8px white;">
+      <div class="container-fluid nonvegitem">
+
+        <h1 class="headingreveal">Non-Veg Food Items</h1>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3">
+              <img
+                src="delicious-fried-chicken-plate.jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Delicious Chicken Kabab</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>100 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <img
+                src="chicken_slice.jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Thava Roasted Chicken</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>150 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <img
+                src="chicken_thandoori.jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Delicious chicken Thandoori  </h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>250 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <img
+                src="french-fries-levitate-white-background.jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Chicken Finger Chips</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>250 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+          </div>
+          <hr style="height: 3px;color: red;box-shadow: 20px 12px 8px white;">
+
+          <div class="row">
+            <div class="col-md-3">
+              <img
+                src="gourmet-beef-curry-taco-with-fresh-guacamole-generated-by-ai.jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Chicken Full meals</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>100 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <img
+                src="kabab.jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Delecious Chicken Lalipap</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>150 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <img
+                src="muttonroast.jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Delicious Mutton Roast</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>250 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <img
+                src="plate-biryani-with-bunch-spices-it (1).jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Bhasumathi chicken Biriyani</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>250 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+          </div>
+          <hr style="height: 3px;color: red;box-shadow: 20px 12px 8px white;">
+          <div class="row">
+            <div class="col-md-3">
+              <img
+                src="wallpaperflare.com_wallpaper (9).jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Thava Fish Fry</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>100 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <img
+                src="wallpaperflare.com_wallpaper (20).jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Delecious Chicken Biriyani</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>150 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <img
+                src="wallpaperflare.com_wallpaper (19).jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Delicious Mutton Chaps</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>250 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <img
+                src="wallpaperflare.com_wallpaper (18).jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Delicious peppar Chicken</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>250 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+          </div>
+
+          <hr style="height: 3px;color: red;box-shadow: 20px 12px 8px white;">
+
+
+          <div class="row">
+            <div class="col-md-3">
+              <img
+                src="wallpaperflare.com_wallpaper (17).jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>chicken onion pizza</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>100 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <img
+                src="wallpaperflare.com_wallpaper (16).jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Delecious Chicken Biriyani</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>150 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <img
+                src="wallpaperflare.com_wallpaper (14).jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Delicious Chicken Lalipaps</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>250 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <img
+                src="wallpaperflare.com_wallpaper (12).jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Full Chicken Thandoori</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>250 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+          </div>
+
+          <hr style="height: 3px;color: red;box-shadow: 20px 12px 8px white;">
+          <div class="row">
+            <div class="col-md-3">
+              <img
+                src="wallpaperflare.com_wallpaper (11).jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Fish Thava Fry</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>100 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <img
+                src="slide3.jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Delecious Chicken Grill</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>150 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <img
+                src="slide4.jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Delicious Chilli Chicken </h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>250 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <img
+                src="wallpaperflare.com_wallpaper (18).jpg"
+                alt=""
+                width="90%"
+                height="300px"
+                class="headingreveal"
+              />
+              <div class="container-fluid pricemenu headingreveal">
+                <h3>Full Chicken Thandoori</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>250 Rs/-</p>
+                <button>add cart</button>
+                  <button>Purchase</button>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+    <hr style="height: 3px;color: red;box-shadow: 20px 12px 8px white;">
+    <div class="container-fluid p-0 footermenu">
+        <div class="container footer">
+          <img src="footer.png" alt="" width="150px" height="150px" />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 footerlogo">
+              <img
+                src="serving (1).png"
+                alt=""
+                width="70px "
+                height="70px"
+              />
+            </div>
+            <div class="col-md-1"><a href="index.html">Home</a></div>
+            <div class="col-md-1"><a href="#">About</a></div>
+            <div class="col-md-1"><a href="#">Contact</a></div>
+            <div class="col-md-1"><a href="service.html">services</a></div>
+            <div class="col-md-1"><a href="menucard.html">Menu Card</a></div>
+          </div>
+        </div>
+      </div>
+    <script type="text/javascript">
+        // heading
+        window.addEventListener("scroll", headingreveal);
+  
+        function headingreveal() {
+          var reveals = document.querySelectorAll(".headingreveal");
+          for (var i = 0; i < reveals.length; i++) {
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+            if (revealtop < windowheight - revealpoint) {
+              reveals[i].classList.add("active");
+            } else {
+              reveals[i].classList.remove("active");
+            }
+          }
+        }
+        </script>
+  </body>
+</html>

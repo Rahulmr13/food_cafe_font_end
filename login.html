@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      img {
+        position: absolute;
+        opacity: 1;
+      }
+      .loginform {
+        top: 10rem;
+        background-color: transparent;
+        height: 600px;
+        width: 70%;
+        padding: 40px;
+
+        position: relative;
+
+        text-align: center;
+        color: white;
+        border: 3px solid yellow;
+      }
+      .loginform h1 {
+        font-size: 33px;
+        font-family: jokerman;
+        color: pink;
+        text-shadow: 2px 1px 8px rgb(241, 175, 241);
+        padding-bottom: 20px;
+        padding-top: 10px;
+      }
+      #background-video {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        opacity: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid p-0 bodyconent">
+      <video id="background-video" autoplay loop muted>
+        <source src="landingvideo.mp4" type="video/mp4" />
+      </video>
+      <div class="container loginform">
+        <div class="container-fluid">
+          <img
+              src="images/logo.jpg"
+              alt="logo"
+              width="60"
+              height="60"
+              class="rounded-circle"
+              style="position: relative"
+            />
+          <h1>Login here</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6 mb-4">
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+              required
+              style="
+                color: red;
+                padding: 10px;
+                font-family: monospace;
+                background-color: transparent;
+                border-radius: 10px;
+                
+              "
+            />
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6 mb-4">
+            <label for="password"></label>
+            <input
+              type="password"
+              name="password"
+              class="form-control"
+              id="password"
+              placeholder="Enter your password"
+              required
+              style="
+                color: rgb(0, 85, 255);
+                padding: 10px;
+                font-family: monospace;
+                background-color: transparent;
+                border-radius: 10px;
+              "
+            />
+            <div class="col-md-3"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-2">
+            <input
+              type="submit"
+              value="Login"
+              style="
+                color: rgb(134, 51, 65);
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-family: monospace;
+                background-color:white;
+                opacity:0.8;
+                border-radius: 5px;
+                font-size: 15px;
+                border: 1px solid red;
+                margin-bottom: 15px;
+                margin-top: 20px;
+              "
+              
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <i><p style="color: yellow; font-weight: bold; ">
+              Sign Up here ?</i><span style="color: red">* </span>
+              <a href="index.html">Sign Up</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
